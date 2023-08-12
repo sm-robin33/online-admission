@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: url(../images/bk-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container{
+    width: 400px;
+    background-color: #c75a55;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(35%,-50%);
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+form{
+    padding: 30px 35px;
+    background-color: white;
+    clip-path: polygon(0 0,100% 0,100% 95%,0% 100%);
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-input{
+    display: block;
+    font-size: 12px;
+    width: 100%;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.form-input:focus{
+    outline: none;
+    border-bottom: 2px solid #c75a55 transparent;
+
+}
+.form-input::-webkit-input-placeholder{
+    color: #777;
+}
+.form-label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: all .3s ease;
+}
+
+.form-input:placeholder-shown + .form-label{
+    transform: translateY(-37px);
+    opacity: 0;
+    visibility: hidden;
+
+}
+.form-btn{
+    text-align: center;
+
+}
+.btn{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2c2c2c;
+    background-color: #eee;
+    padding: 10px 30px;
+    border-radius: 3px;
+    transition: all .2s ease;
+}
+.btn:hover{
+    background-color: #c75a55;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+
+}
+.form-bottom{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sign{
+    color: white;
+    font-size: 12px;
+}
+.social{
+    font-size: 12px;
+    margin-top: 8px;
+    display: flex;
+    color: #c75a59;
+    align-items: center;
+    justify-content: center;
+}
+.social i{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
+    transition: all .3s ease;
+    transform: translateY(-2px);
+}
+.social i:hover{
+    box-shadow: 0 20px 30px rgba(0,0,0,.2);
+}
+.social i:active{
+    transform: translateY(0);
+}
